@@ -42,6 +42,12 @@ const config = {
           "100": "#E4ECFF",
         },
         purple: "#CBACF9",
+        deepPurple: "#3d0075",
+        neonPurple: "#ab5ffb",
+        neonPink: {
+          DEFAULT: "#ff4d94",
+          100: "#e98cf5",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

@@ -1,6 +1,7 @@
 import { Spotlight } from "@/components/ui/Spotlight";
 import { TextGenerateEffect } from "@/components/ui/TextGenerateEffect";
 import MagicButton from "@/components/ui/MagicButton";
+import { FaLocationArrow } from "react-icons/fa6";
 
 export default function Hero() {
   /*
@@ -31,7 +32,7 @@ export default function Hero() {
       </div>
 
       {/* Background Div */}
-      <div className="absolute left-0 top-0 flex h-screen w-full items-center justify-center bg-white bg-grid-black/[0.3] dark:bg-black-100/[0.3] dark:bg-grid-white/[0.1]">
+      <div className="dark:bg-deepPurple/[0.5] absolute left-0 top-0 flex h-screen w-full items-center justify-center bg-white bg-grid-black/[0.3] dark:bg-grid-white/[0.1]">
         {/* Radial gradient for the container to give a faded look */}
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black-100" />
       </div>
@@ -54,8 +55,11 @@ export default function Hero() {
           </p>
 
           <a href="#about">
-            {" "}
-            <MagicButton content="Show my work" icon={} />{" "}
+            <MagicButton
+              content="Show my work"
+              icon={<FaLocationArrow />}
+              position="right"
+            />
           </a>
         </div>
       </div>
