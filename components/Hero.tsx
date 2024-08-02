@@ -55,7 +55,7 @@ export default function Hero() {
 
           <a href="#about">
             {" "}
-            <MagicButton title="Show my work" />{" "}
+            <MagicButton content="Show my work" icon={} />{" "}
           </a>
         </div>
       </div>
