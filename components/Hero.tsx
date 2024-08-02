@@ -1,5 +1,6 @@
 import { Spotlight } from "@/components/ui/Spotlight";
 import { TextGenerateEffect } from "@/components/ui/TextGenerateEffect";
+import MagicButton from "@/components/ui/MagicButton";
 
 export default function Hero() {
   /*
@@ -30,7 +31,7 @@ export default function Hero() {
       </div>
 
       {/* Background Div */}
-      <div className="absolute left-0 top-0 flex h-screen w-full items-center justify-center bg-white bg-grid-black/[0.3] dark:bg-black-100/[0.3] dark:bg-grid-white/[0.3]">
+      <div className="absolute left-0 top-0 flex h-screen w-full items-center justify-center bg-white bg-grid-black/[0.3] dark:bg-black-100/[0.3] dark:bg-grid-white/[0.1]">
         {/* Radial gradient for the container to give a faded look */}
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black-100" />
       </div>
@@ -42,10 +43,20 @@ export default function Hero() {
             Dynamic Web Magic with Next.js
           </h2>
 
+          {/* Words beyond index 3 are purple, check the source code line 40. */}
           <TextGenerateEffect
-            className=""
+            className="text-center text-[40px] md:text-5xl lg:text-8xl"
             words="This is so flashy but it is so useless lol."
           />
+          <p className="mb-4 text-center text-sm md:text-lg md:tracking-wider lg:text-2xl">
+            Yo! I&apos;m Tiger, a Previous.Js developer based in my
+            parent&apos;s basement.
+          </p>
+
+          <a href="#about">
+            {" "}
+            <MagicButton title="Show my work" />{" "}
+          </a>
         </div>
       </div>
     </div>
