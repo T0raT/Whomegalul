@@ -48,6 +48,12 @@ const config = {
           DEFAULT: "#ff4d94",
           100: "#e98cf5",
         },
+        2077: {
+          ltblue: "#02d7f2",
+          dpblue: "#007aff",
+          yellow: "#f3e500",
+          red: "#ff1111",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

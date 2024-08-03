@@ -13,29 +13,29 @@ export default function Hero() {
   return (
     <div className="pb-20 pt-36">
       {/* Spotlight divs */}
-      <div>
-        {/* This is particularly cool, taking spotlights and placing them outside the viewable screen
-         * to position them and forming glares and stuff...
-         * It's nothing groundbreaking, but just little things you can do.
-         */}
-        <Spotlight
-          className="-left-10 -top-40 h-screen md:-left-32 md:-top-20"
-          fill="white"
-        />
+      {/*<div>*/}
+      {/*  /!* This is particularly cool, taking spotlights and placing them outside the viewable screen*/}
+      {/*   * to position them and forming glares and stuff...*/}
+      {/*   * It's nothing groundbreaking, but just little things you can do.*/}
+      {/*   *!/*/}
+      {/*  <Spotlight*/}
+      {/*    className="-left-10 -top-40 h-screen md:-left-32 md:-top-20"*/}
+      {/*    fill="white"*/}
+      {/*  />*/}
 
-        <Spotlight
-          className="left-full top-10 h-[80vh] w-[50vw]"
-          fill="purple"
-        />
+      {/*  <Spotlight*/}
+      {/*    className="left-full top-10 h-[80vh] w-[50vw]"*/}
+      {/*    fill="purple"*/}
+      {/*  />*/}
 
-        <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
-      </div>
+      {/*  <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />*/}
+      {/*</div>*/}
 
       {/* Background Div */}
-      <div className="dark:bg-deepPurple/[0.5] absolute left-0 top-0 flex h-screen w-full items-center justify-center bg-white bg-grid-black/[0.3] dark:bg-grid-white/[0.1]">
-        {/* Radial gradient for the container to give a faded look */}
-        <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black-100" />
-      </div>
+      {/*<div className="dark:bg-grid-2077-dpblue/[0.3] absolute left-0 top-0 flex h-screen w-full items-center justify-center bg-white bg-grid-black/[0.3] dark:bg-black">*/}
+      {/*  /!* Radial gradient for the container to give a faded look *!/*/}
+      {/*  <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black" />*/}
+      {/*</div>*/}
 
       {/* Content div */}
       <div className="relative z-10 my-20 flex justify-center">
@@ -47,7 +47,7 @@ export default function Hero() {
           {/* Words beyond index 3 are purple, check the source code line 40. */}
           <TextGenerateEffect
             className="text-center text-[40px] md:text-5xl lg:text-8xl"
-            words="This is so flashy but it is so useless lol."
+            words="你好，こんにちは！"
           />
           <p className="mb-4 text-center text-sm md:text-lg md:tracking-wider lg:text-2xl">
             Yo! I&apos;m Tiger, a Previous.Js developer based in my
