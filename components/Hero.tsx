@@ -47,12 +47,12 @@ export default function Hero() {
 
           {/* Words beyond index 3 are purple, check the source code line 40. */}
           <TextGenerateEffect
-            className="text-center text-[40px] md:text-5xl lg:text-8xl"
+            className="text-center text-[40px] md:text-6xl"
             words="你好，こんにちは！"
           />
           <p className="mb-4 text-center text-sm md:text-lg md:tracking-wider lg:text-2xl">
-            Yo! I&apos;m Tiger, a Previous.Js developer based in my
-            parent&apos;s basement.
+            I&apos;m Tiger, a Previous.Js developer based in my parent&apos;s
+            basement.
           </p>
 
           <a href="#about">

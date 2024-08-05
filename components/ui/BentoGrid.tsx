@@ -1,5 +1,7 @@
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "@/components/ui/GradientBg";
+import { GlobeDemo } from "./GridGlobe";
+import { Meteors } from "@/components/ui/Meteors";
 
 export const BentoGrid = ({
   className,
@@ -11,7 +13,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        "mx-auto grid max-w-7xl grid-cols-1 gap-4 md:grid-cols-5 md:grid-rows-4 md:gap-8",
+        "mx-auto grid max-w-5xl grid-cols-1 gap-4 md:grid-cols-5 md:grid-rows-4 md:gap-8",
         className,
       )}
     >
@@ -44,7 +46,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "group/bento relative row-span-1 flex flex-col justify-between space-y-4 rounded-3xl border border-transparent bg-white p-4 shadow-input transition duration-200 hover:shadow-xl dark:border-white/[0.2] dark:bg-black dark:shadow-none",
+        "group/bento relative row-span-1 flex flex-col justify-between space-y-4 overflow-hidden rounded-3xl border border-white/[0.1] shadow-input transition duration-200 hover:shadow-xl dark:shadow-none",
         className,
       )}
       style={{
@@ -72,10 +74,11 @@ export const BentoGridItem = ({
             />
           )}
         </div>
+
         {id === 6 && (
-          <BackgroundGradientAnimation>
+          <Meteors>
             <div className="absolute z-50 flex items-center justify-center font-bold text-white" />
-          </BackgroundGradientAnimation>
+          </Meteors>
         )}
 
         <div
@@ -87,13 +90,41 @@ export const BentoGridItem = ({
           <span className="z-10 font-sans text-sm font-extralight text-[#c1c2d3] md:text-xs lg:text-base">
             {description}
           </span>
-          <span className="z-10 max-w-96 font-sans text-lg font-bold lg:text-3xl">
+          <span className="z-10 max-w-96 font-sans text-lg font-bold lg:text-2xl">
             {title}
           </span>
+
+          {id === 2 && <GlobeDemo />}
+
+          {id === 3 && (
+            <div className="absolute -right-3 flex w-fit gap-5 lg:gap-4">
+              <div className="flex flex-col gap-3 lg:gap-5">
+                <span className="rounded-lg bg-[#111] px-3 py-4 text-center" />
+                {["React.js", "Next.js", "TypeScript"].map((item) => (
+                  <span
+                    key={item}
+                    className="rounded-lg bg-[#111] px-3 py-2 text-center text-xs opacity-50 lg:py-4 lg:opacity-100"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+
+              <div className="flex flex-col gap-3 lg:gap-5">
+                {["Bash", "C", "Tailwind CSS"].map((item) => (
+                  <span
+                    key={item}
+                    className="rounded-lg bg-[#111] px-3 py-2 text-center text-xs opacity-50 lg:py-4 lg:opacity-100"
+                  >
+                    {item}
+                  </span>
+                ))}
+                <span className="rounded-lg bg-[#111] px-3 py-4 text-center" />
+              </div>
+            </div>
+          )}
         </div>
       </div>
-
-      <div className="transition duration-200 group-hover/bento:translate-x-2"></div>
     </div>
   );
 };
