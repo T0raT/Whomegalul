@@ -91,9 +91,9 @@ export const BentoGridItem = ({
             {title}
           </span>
         </div>
-
-        <div className="transition duration-200 group-hover/bento:translate-x-2"></div>
       </div>
+
+      <div className="transition duration-200 group-hover/bento:translate-x-2"></div>
     </div>
   );
 };
