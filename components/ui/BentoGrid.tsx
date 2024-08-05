@@ -1,5 +1,4 @@
 import { cn } from "@/lib/utils";
-import { BackgroundGradientAnimation } from "@/components/ui/GradientBg";
 import { GlobeDemo } from "./GridGlobe";
 import { Meteors } from "@/components/ui/Meteors";
 
@@ -75,6 +74,14 @@ export const BentoGridItem = ({
           )}
         </div>
 
+        {id === 1 && (
+          <a
+            href="https://www.github.com/t0raT"
+            target="_blank"
+            className="absolute left-0 top-0 z-50 inline-block h-full w-full cursor-pointer"
+          ></a>
+        )}
+
         {id === 6 && (
           <Meteors>
             <div className="absolute z-50 flex items-center justify-center font-bold text-white" />
@@ -122,6 +129,14 @@ export const BentoGridItem = ({
                 <span className="rounded-lg bg-[#111] px-3 py-4 text-center" />
               </div>
             </div>
+          )}
+
+          {id === 4 && (
+            <a
+              href="https://www.linkedin.com/in/daian-liu-a69990193/"
+              target="_blank"
+              className="absolute left-0 top-0 z-50 inline-block h-full w-full cursor-pointer"
+            ></a>
           )}
         </div>
       </div>
